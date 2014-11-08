@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page01Controller">
+   <children>
+      <Text layoutX="26.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Good Parts of JavaOne2014" textAlignment="CENTER" wrappingWidth="1260.5546875">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="872.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Takayama Tomoyo" textAlignment="RIGHT">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="（JavaOneに参加して良かったこと、楽しかったこと）" textAlignment="CENTER" wrappingWidth="1133.46484375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="368.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="〜 一個人（ちょっと仕事でJava使ってるレベル）の感想です 〜" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

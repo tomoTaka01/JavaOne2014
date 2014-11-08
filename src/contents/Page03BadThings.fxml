@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page03Controller">
+   <children>
+      <Text fx:id="p1" layoutX="42.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2回目の参加ですが、、、">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2" layoutX="161.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="英語       ・・・">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p3" layoutX="508.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="やっぱり？です">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p4" layoutX="156.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="セッション・・・">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p5" layoutX="508.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ハードル高いです。">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p7" layoutX="208.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's look on the bright side!" textAlignment="CENTER" wrappingWidth="787.3837890625">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="p6" fitHeight="122.0" fitWidth="116.0" layoutX="499.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

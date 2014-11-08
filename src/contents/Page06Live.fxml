@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page06Controller">
+   <children>
+      <Text fx:id="p1" layoutX="57.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Good Part 3">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2" layoutX="134.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appreciation Event">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p5" layoutX="83.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Null Pointers(the band of Java developers) in Duke's Cafe">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="p3" fitHeight="150.0" fitWidth="200.0" layoutX="326.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Live1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p4" fitHeight="150.0" fitWidth="200.0" layoutX="640.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Live2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p6" fitHeight="150.0" fitWidth="200.0" layoutX="334.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@NullPointers1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p7" fitHeight="150.0" fitWidth="200.0" layoutX="640.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@NullPointers2.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

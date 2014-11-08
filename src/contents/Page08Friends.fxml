@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page08Controller">
+   <children>
+      <Text fx:id="p1" layoutX="57.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Good Part 5">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2" layoutX="98.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="参加者との交流">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p3" layoutX="163.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="お隣さんに話しかけてみるとか・・・">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="208.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="164.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="p4" layoutX="166.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Twitterでフォロー">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="p5" layoutX="166.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="メアド交換">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="p6" fitHeight="198.0" fitWidth="262.0" layoutX="807.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@friends1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

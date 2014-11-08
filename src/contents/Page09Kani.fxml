@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page09Controller">
+   <children>
+      <Text fx:id="p1" layoutX="58.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Good Part 6">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2" layoutX="98.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="かにパーティー">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p4" layoutX="263.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="日本中の参加者とも交流">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="p5" layoutX="266.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebookに友達が増えたり・・・">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="p7" layoutX="336.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="とにかく楽しいです！">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="p6" fitHeight="150.0" fitWidth="200.0" layoutX="813.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kani2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p3" fitHeight="150.0" fitWidth="200.0" layoutX="420.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kani1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

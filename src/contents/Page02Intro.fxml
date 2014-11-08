@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page02Controller">
+    <children>
+        <Text id="p1" fx:id="p1" layoutX="366.0" layoutY="120.0" text="自己紹介">
+            <font><Font size="48.0" /></font>
+        </Text>
+        <Text fx:id="p2" layoutX="50" layoutY="200" text="名前">
+            <font><Font size="30.0" fx:id="x1" /></font>            
+        </Text>
+        <Text fx:id="p3" font="$x1" layoutX="250" layoutY="200" text="高山　朋代" />
+        <Text fx:id="p4" font="$x1" layoutX="50" layoutY="300" text="職業" />
+        <Text fx:id="p5" font="$x1" layoutX="250" layoutY="300" text="フリー（派遣社員）でJavaやってます" />
+        <Text fx:id="p6" font="$x1" layoutX="50" layoutY="400" text="Twitter id" />
+        <Text fx:id="p7" font="$x1" layoutX="250" layoutY="400" text="tomo_taka01" />
+        <Text fx:id="p8" font="$x1" layoutX="50" layoutY="500" text="ブログ" />
+        <Text fx:id="p9" font="$x1" layoutX="200" layoutY="500" text="http://www.hatena.ne.jp/tomoTaka/">
+                        <font><Font size="28.0" /></font>
+        </Text>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="988.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@icon.jpg" />
+      </image>
+            </ImageView>
+    </children>    
+</AnchorPane>

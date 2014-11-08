@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page04Controller">
+   <children>
+      <Text fx:id="p1" layoutX="57.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Good Part 1">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2" layoutX="98.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JavaOne報告会でスピーカー">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="p3" layoutX="123.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="こんな大勢の方の前でお話する機会が持てます！">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="p11" fitHeight="236.0" fitWidth="286.0" layoutX="312.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@speaker.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p12" fitHeight="247.0" fitWidth="280.0" layoutX="613.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@speaker1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
