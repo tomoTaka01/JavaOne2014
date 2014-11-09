@@ -63,7 +63,7 @@ public class Page05Controller implements Initializable, PageController{
                 index++;
             }
             if (index == 8){
-                for (; index < 11;index++) {
+                for (; index < 12;index++) {
                     NodeTransitions.fadein(texts[index]);
                 }
             }
@@ -71,5 +71,4 @@ public class Page05Controller implements Initializable, PageController{
         }
         return false;
     }
-    
 }

@@ -2,18 +2,14 @@ package controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.Animation;
 import javafx.animation.Interpolator;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
+import javafx.animation.ParallelTransition;
+import javafx.animation.ScaleTransition;
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Point3D;
 import javafx.scene.Node;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Cylinder;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
@@ -64,40 +60,28 @@ public class Page07Controller implements Initializable, PageController{
             }
             if (index == 5){
                 throwTshirt();
-//                NodeTransitions.fadeout(p6, 4);
-                NodeTransitions.fadein(texts[index], 8);
                 index++;
-                NodeTransitions.fadein(texts[index], 8);
                 index++;
             }
             return true;
         }
         return false;
     }
-
     private void throwTshirt(){
-        PhongMaterial material = new PhongMaterial();
-        material.setDiffuseMap(new Image(getClass().getResource("Tshirt.jpg").toString()));
-        p6.setMaterial(material);
-        p6.setRotationAxis(new Point3D(0, 1, 0));
-        p6.setRotate(30);
-        Timeline animation = new Timeline();
-        KeyFrame frame1 = new KeyFrame(Duration.seconds(1)
-                , new KeyValue(p6.layoutXProperty(), 380.0)
-                , new KeyValue(p6.layoutYProperty(), 380.0)
-        );
-        KeyFrame frame2 = new KeyFrame(Duration.seconds(2)
-                , new KeyValue(p6.layoutXProperty(), 420.0)
-                , new KeyValue(p6.layoutYProperty(), 440.0)
-        );
-        KeyFrame frame3 = new KeyFrame(Duration.seconds(3)
-                , new KeyValue(p6.layoutXProperty(), 450.0)
-                , new KeyValue(p6.layoutYProperty(), 500.0)
-        );
-//        KeyFrame frame4 = new KeyFrame(Duration.seconds(4)
-//                , new KeyValue(p6.opacityProperty(), 0.0)
-//        );
-        animation.getKeyFrames().addAll(frame1, frame2,frame3);
-        animation.play();
+        TranslateTransition tran1 = new TranslateTransition(Duration.seconds(5), p6);
+        tran1.setToX(-560);
+        tran1.setToY(220);
+        tran1.setInterpolator(Interpolator.EASE_BOTH);
+        ScaleTransition tran2 = new ScaleTransition(Duration.seconds(5), p6);
+        tran2.setByX(1.5f);
+        tran2.setByY(1.5f);
+        ParallelTransition tran3 = new ParallelTransition(tran1, tran2);
+        tran3.play();
+        tran3.setOnFinished(e -> {
+            p6.setOpacity(0.0);
+            NodeTransitions.fadein(p7);
+            NodeTransitions.fadein(p8);
+        });
     }
+
 }

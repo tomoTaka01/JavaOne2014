@@ -5,7 +5,10 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.Reflection;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import transition.NodeTransitions;
 
@@ -36,6 +39,7 @@ public class Page09Controller implements Initializable, PageController{
         for (Node text : texts) {
             text.setOpacity(0);
         }
+        addEffect();
     }    
 
     @Override
@@ -58,4 +62,15 @@ public class Page09Controller implements Initializable, PageController{
         return false;
     }
     
+    private void addEffect(){
+        DropShadow shadow = new DropShadow();
+        shadow.setColor(Color.AQUA);
+        shadow.setOffsetX(10.0);
+        shadow.setOffsetY(10.0);
+        p7.setFill(Color.BLUE);
+        Reflection reflection = new Reflection();
+        reflection.setFraction(1.2);
+        reflection.setInput(shadow);
+        p7.setEffect(reflection);
+    }
 }
