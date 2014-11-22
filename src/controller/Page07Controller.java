@@ -68,11 +68,11 @@ public class Page07Controller implements Initializable, PageController{
         return false;
     }
     private void throwTshirt(){
-        TranslateTransition tran1 = new TranslateTransition(Duration.seconds(5), p6);
+        TranslateTransition tran1 = new TranslateTransition(Duration.seconds(3), p6);
         tran1.setToX(-560);
         tran1.setToY(220);
         tran1.setInterpolator(Interpolator.EASE_BOTH);
-        ScaleTransition tran2 = new ScaleTransition(Duration.seconds(5), p6);
+        ScaleTransition tran2 = new ScaleTransition(Duration.seconds(3), p6);
         tran2.setByX(1.5f);
         tran2.setByY(1.5f);
         ParallelTransition tran3 = new ParallelTransition(tran1, tran2);
